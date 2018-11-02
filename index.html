@@ -6,7 +6,33 @@
 
 </head>
 <body>
-<button type="button" onclick="showMessage()";>Click Me!</button>
+<button type="button" onclick="showMessage()";>Click Me 1!</button>
+<button type="button" onclick="showMessage1();">Click me 2!</button>
+<script>
+    function showMessage2() {
+        alert('Hi!');
+    }
+</script>
+<div id="messageDiv"></div>
+    <button type="button" onclick="showMessage3()";>Click me 3!</button>
+    <script>
+        function showMessage3() {
+            document.getElementById('messageDiv').innerHTML = 'Hello';
+        }
+    </script>
+
+<button type="button" onclick="showMessage4();">Click me 4!</button>
+<script>
+    function showMessage4() {
+        document.write('Konnichiwa!');
+    }
+</script>
+<button type="button" onclick="showMessage5()";>Click me 5!</button>
+<script>
+    function showMessage5() {
+        console.log('Bonjour');
+    }
+</script>
 <script src="button.js"></script>
 </body>
 </html>
